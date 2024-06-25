@@ -1,0 +1,27 @@
+What we need to install before using JS
+We need a Browser only , because browser has JS Engine in Built.
+Chrome, Brave  = V8 Engine
+I.E = Chakra
+FireFox = Spider Monkey
+Safari = JS Loops
+
+ECMA Script = ES 
+ES 2023
+
+
+1. Dynamic Typed Language
+Based on value , it decide types
+A) undefined
+Defined
+b) number (0-9) , Decimal , Small, Big , NaN, Infinity
+Helper Methods : isNaN, isFinite, parseInt , parseFloat
+c) string - “ ‘ `
+String Interpolation
++ (addition, Concate)
+d) boolean (true, false)
+E) bigint (ES2020)
+F) Symbol (ES6) (2015) (Rare to use)
+
+
+
+

@@ -1,0 +1,174 @@
+var a ;
+undefined
+typeof a;
+'undefined'
+a=100;
+100
+typeof a;
+'number'
+a='Amit';
+'Amit'
+typeof a;
+'string'
+a=true;
+true
+typeof a;
+'boolean'
+a=10000;
+10000
+a=64645654779459875698795n;
+64645654779459875698795n
+typeof a;
+'bigint'
+var a = 10;
+undefined
+typeof a;
+'number'
+var b = a;
+undefined
+b + 5;
+15
+a;
+10
+b;
+10
+b + 5;
+15
+b;
+10
+b = b + 5;
+15
+b;
+15
+var fruits = ["mango", "apple", "oranges"];
+undefined
+var f = fruits;
+undefined
+f;
+(3) ['mango', 'apple', 'oranges']
+fruits;
+(3) ['mango', 'apple', 'oranges']
+f[0] ='Banana';
+'Banana'
+f;
+(3) ['Banana', 'apple', 'oranges']
+fruits;
+(3) ['Banana', 'apple', 'oranges']
+var name= 'Amit';
+undefined
+name.toUpperCase();
+'AMIT'
+name;
+'Amit'
+var arr = [10,20,30,40,50;
+VM754:1 Uncaught SyntaxError: Unexpected token ';'
+typeof arr;
+'undefined'
+var arr = [10,20,30,40,50];
+undefined
+typeof arr;
+'object'
+arr.push(1000);
+6
+arr;
+(6) [10, 20, 30, 40, 50, 1000]
+arr.shift();
+10
+arr;
+(5) [20, 30, 40, 50, 1000]
+arr.pop();
+1000
+arr.unshift(999);
+5
+arr;
+(5) [999, 20, 30, 40, 50]
+var phones = [4444,6666,777,888,9999,666,555,444];
+undefined
+var phones = {"ram":2222, "shyam":5555};
+undefined
+phones['ram'];
+2222
+var phones2 = [4444,6666,777,888,9999,666,555,444];
+undefined
+phones2[3];
+888
+typeof phones2;
+'object'
+typeof phone;
+'undefined'
+typeof phones;
+'object'
+phones instanceof Object;
+true
+phones2 instanceof Array;
+true
+phones;
+{ram: 2222, shyam: 5555}
+phones2;
+(8) [4444, 6666, 777, 888, 9999, 666, 555, 444]
+typeof phones;
+'object'
+typeof phones2;
+'object'
+phones instanceof Object;
+true
+phones2 instanceof Array;
+true
+phones2;
+(8) [4444, 6666, 777, 888, 9999, 666, 555, 444]
+phones2 instanceof Array;
+true
+phones2 instanceof Object;
+true
+typeof Array;
+'function'
+typeof Object;
+'function'
+phones;
+{ram: 2222, shyam: 5555}
+phones instanceof Object;
+true
+phones instanceof Array;
+false
+var dhoni = {name:'MS Dhoni', age: 43, 50 : 55, 100: 10, 'home address':'New Delhi'}
+undefined
+dhoni.name;
+'MS Dhoni'
+dhoni.age;
+43
+dhoni['name'];
+'MS Dhoni'
+dhoni.50;
+VM2096:1 Uncaught SyntaxError: Unexpected number
+dhoni.home address;
+VM2157:1 Uncaught SyntaxError: Unexpected identifier 'address'
+dhoni[50];
+55
+dhoni['name'];
+'MS Dhoni'
+dhoni['home address'];
+'New Delhi'
+dhoni;
+{50: 55, 100: 10, name: 'MS Dhoni', age: 43, home address: 'New Delhi'}
+dhoni.cars = 100;
+100
+dhoni;
+{50: 55, 100: 10, name: 'MS Dhoni', age: 43, home address: 'New Delhi', cars: 100}
+delete dhoni.age;
+true
+dhoni;
+{50: 55, 100: 10, name: 'MS Dhoni', home address: 'New Delhi', cars: 100}
+dhoni[6] = 500;
+500
+dhoni;
+{6: 500, 50: 55, 100: 10, name: 'MS Dhoni', home address: 'New Delhi', cars: 100}
+var k = 'name';
+undefined
+dhoni.k;
+undefined
+dhoni[k];
+'MS Dhoni'
+k = 'cars';
+'cars'
+dhoni[k];
+100

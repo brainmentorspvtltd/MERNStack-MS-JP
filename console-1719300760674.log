@@ -1,0 +1,87 @@
+var products = [{id:1001, name:'Mobile', price:10000, discount:'10%', image:'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'},
+               {id:1000, name:'Apple Mobile', price:20000, discount:'10%', image:'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'},
+               {id:1001, name:'Mobile', price:10000, discount:'10%', image:'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'},
+               {id:1002, name:'Tablet', price:20000, discount:'20%', image:'https://www.android.com/static/2016/img/devices/tablets/transparent/galaxy-tab-s2_1x.png'},
+               {id:1000, name:'Mobile', price:10000, discount:'10%', image:'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'}];
+undefined
+for(var i = 0; i<products.length; i++){
+    var singleProduct = products[i];
+    console.log(singleProduct.name, singleProduct.id, singleProduct.price);
+}
+VM554:3 Mobile 1001 10000
+VM554:3 Apple Mobile 1000 20000
+VM554:3 Mobile 1001 10000
+VM554:3 Tablet 1002 20000
+VM554:3 Mobile 1000 10000
+undefined
+for(var singleProduct of products){
+    
+    console.log(singleProduct.name, singleProduct.id, singleProduct.price);
+}
+VM582:3 Mobile 1001 10000
+VM582:3 Apple Mobile 1000 20000
+VM582:3 Mobile 1001 10000
+VM582:3 Tablet 1002 20000
+VM582:3 Mobile 1000 10000
+undefined
+for(var singleProduct of products){
+    
+  var html = `<div>
+  <p>${singleProduct.id} ${singleProduct.name} ${singleProduct.price} </p>
+  <img src = '${singleProduct.image}'/>
+  </div>
+  `;
+    console.log(html);
+}
+VM782:8 <div>
+  <p>1001 Mobile 10000 </p>
+  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>
+  </div>
+  
+VM782:8 <div>
+  <p>1000 Apple Mobile 20000 </p>
+  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>
+  </div>
+  
+VM782:8 <div>
+  <p>1001 Mobile 10000 </p>
+  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>
+  </div>
+  
+VM782:8 <div>
+  <p>1002 Tablet 20000 </p>
+  <img src = 'https://www.android.com/static/2016/img/devices/tablets/transparent/galaxy-tab-s2_1x.png'/>
+  </div>
+  
+VM782:8 <div>
+  <p>1000 Mobile 10000 </p>
+  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>
+  </div>
+  
+undefined
+document;
+#document (about:blank)
+for(var singleProduct of products){
+    
+  var html = `<div>
+  <p>${singleProduct.id} ${singleProduct.name} ${singleProduct.price} </p>
+  <img src = '${singleProduct.image}'/>
+  </div>
+  `;
+    document.body.innerHTML = html;
+    //console.log(html);
+}
+"<div>\n  <p>1000 Mobile 10000 </p>\n  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>\n  </div>\n  "
+var html = '';
+for(var singleProduct of products){
+    
+   html = html + `<div>
+  <p>${singleProduct.id} ${singleProduct.name} ${singleProduct.price} </p>
+  <img src = '${singleProduct.image}'/>
+  </div>
+  `;
+    
+    //console.log(html);
+}
+document.body.innerHTML = html;
+"<div>\n  <p>1001 Mobile 10000 </p>\n  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>\n  </div>\n  <div>\n  <p>1000 Apple Mobile 20000 </p>\n  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>\n  </div>\n  <div>\n  <p>1001 Mobile 10000 </p>\n  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>\n  </div>\n  <div>\n  <p>1002 Tablet 20000 </p>\n  <img src = 'https://www.android.com/static/2016/img/devices/tablets/transparent/galaxy-tab-s2_1x.png'/>\n  </div>\n  <div>\n  <p>1000 Mobile 10000 </p>\n  <img src = 'https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png'/>\n  </div>\n  "

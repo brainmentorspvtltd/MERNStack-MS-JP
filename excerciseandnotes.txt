@@ -1,0 +1,74 @@
+Build an Array of Products Having 5 Products
+Every Product has 
+Product Id
+Product Name
+Product Price
+Product Discount
+Product Image
+
+You need to traverse the Products and Print Each detail of a Product 
+Hint : console.log
+
+HTML 
+<div>
+<p>1001, Mobile 9999 10% </p>
+<img src=“URL”/>
+</div>
+
+
+
+Before Object
+The Type/BluePrint Must be Defined.
+e.g Array
+
+OOPS
+Class
+
+What is instanceof?
+Keyword
+
+Diff b/w instanceof and typeof
+
+How you access Object Members
+
+
+Full Stack Web Dev
+1. Front End (Front End Eng) - React JS, HTML, CSS, TailWind, MUI, JS
+2. BackEnd (Back End Eng, API Developer) - Node JS, Express JS , 3rd Party Integerations , RestFul API Development
+3. Database (MongoDB - NO SQL DB)
+4. AWS - Deployment
+E-Learning Platform
+Video’s - 1 Year
+What we need to install before using JS
+We need a Browser only , because browser has JS Engine in Built.
+Chrome, Brave  = V8 Engine
+I.E = Chakra
+FireFox = Spider Monkey
+Safari = JS Loops
+
+ECMA Script = ES 
+ES 2023
+
+
+1. Dynamic Typed Language
+Based on value , it decide types
+Value Type / Immutable Type/ Primitive  Type
+A) undefined
+Defined
+b) number (0-9) , Decimal , Small, Big , NaN, Infinity
+Helper Methods : isNaN, isFinite, parseInt , parseFloat
+c) string - “ ‘ `
+String Interpolation
++ (addition, Concate)
+d) boolean (true, false)
+E) bigint (ES2020)
+F) Symbol (ES6) (2015) (Rare to use)
+
+Reference Type / Mutable Type
+a) Array
+
+
+
+
+
+

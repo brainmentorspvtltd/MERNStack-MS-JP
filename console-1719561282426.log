@@ -1,0 +1,96 @@
+function show(){
+    x= 20; // Global 
+}
+undefined
+show();
+undefined
+x;
+20
+x= "Amit";
+'Amit'
+x++;
+NaN
+function show(){
+    // var y ;
+    console.log('Y is ' , y);
+    if(10>2){
+    var y =100; // y = 100
+    }
+    console.log('** Y is ', y);
+}
+undefined
+show();
+VM370:3 Y is  undefined
+VM370:7 ** Y is  100
+undefined
+function show(){
+    // var y ;
+    console.log('Y is ' , y);
+    var y =1000; // y = 1000
+    console.log('Y is ' , y);
+    if(10>2){
+    var y =100; // y = 100
+    }
+    console.log('Y is ' , y);
+    var y = 999; // y = 999
+    console.log('** Y is ', y);
+}
+undefined
+show();
+VM430:3 Y is  undefined
+VM430:5 Y is  1000
+VM430:9 Y is  100
+VM430:11 ** Y is  999
+undefined
+function show(){
+  
+    console.log('Y is ' , y);
+    
+    if(10>2){
+        // Block Level
+    let y =100; 
+    }
+    
+    console.log('** Y is ', y);
+}
+undefined
+show();
+VM483:3 Uncaught ReferenceError: y is not defined
+    at show (<anonymous>:3:27)
+    at <anonymous>:1:1
+show @ VM483:3
+(anonymous) @ VM501:1
+function show(){
+  
+    // console.log('Y is ' , y);
+    
+    if(10>2){
+        // TDZ
+        console.log('Y is ' , y);
+        // Block Level
+    let y =100; 
+    }
+    
+    console.log('** Y is ', y);
+}
+undefined
+show();
+VM515:7 Uncaught ReferenceError: Cannot access 'y' before initialization
+    at show (<anonymous>:7:31)
+    at <anonymous>:1:1
+show @ VM515:7
+(anonymous) @ VM520:1
+function show(){
+  
+    // console.log('Y is ' , y);
+    let y  = 90;
+    if(10>2){
+        // TDZ
+        console.log('Y is ' , y);
+        // Block Level
+    let y =100; 
+    }
+    
+    console.log('** Y is ', y);
+}
+undefined

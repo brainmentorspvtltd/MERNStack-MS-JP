@@ -1,0 +1,37 @@
+function show(){
+    console.log("I am ", this);
+}
+undefined
+window.show;
+ƒ show(){
+    console.log("I am ", this);
+}
+show(); // window.show()
+VM104:2 I am  Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+var d = new show();
+VM104:2 I am  show {}
+undefined
+const disp = ()=>{
+    console.log(' I am ',this);
+}
+undefined
+disp();
+VM306:2  I am  Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+window == this;
+true
+var d = new disp();
+VM393:1 Uncaught TypeError: disp is not a constructor
+    at <anonymous>:1:9
+(anonymous) @ VM393:1
+function App(){
+    return 10,20;
+}
+undefined
+App();
+20
+function App(){
+    return [10,20];
+}
+undefined
